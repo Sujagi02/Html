@@ -4,59 +4,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <title> Login Page </title>  
 <style>   
-Body {  
-  font-family: Calibri, Helvetica, sans-serif;  
-  background-color: pink;  
-}  
-button {   
-       background-color: #4CAF50;   
-       width: 100%;  
-        color: orange;   
-        padding: 15px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;   
-         }   
- form {   
-        border: 3px solid #f1f1f1;   
-    }   
- input[type=text], input[type=password] {   
-        width: 100%;   
-        margin: 8px 0;  
-        padding: 12px 20px;   
-        display: inline-block;   
-        border: 2px solid green;   
-        box-sizing: border-box;   
-    }  
- button:hover {   
-        opacity: 0.7;   
-    }   
-  .cancelbtn {   
-        width: auto;   
-        padding: 10px 18px;  
-        margin: 10px 5px;  
-    }   
-        
-     
- .container {   
-        padding: 25px;   
-        background-color: lightblue;  
-    }   
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
 </style>   
 </head>    
 <body>    
-    <center> <h1> Student Login Form </h1> </center>   
-    <form>  
-        <div class="container">   
-            <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Login</button>   
-            <input type="checkbox" checked="checked"> Remember me   
-            <button type="button" class="cancelbtn"> Cancel</button>   
-            Forgot <a href="#"> password? </a>   
-        </div>   
-    </form>     
+    <center> <h1> My Skills </h1> </center>   
+<p>HTML</p>
+<div class="container">
+  <div class="skills html">90%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">65%</div>
+</div>
+
+<p>PHP</p>
+<div class="container">
+  <div class="skills php">60%</div>
+</div>
 </body>     
 </html>  
